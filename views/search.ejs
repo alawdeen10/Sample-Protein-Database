@@ -1,0 +1,12 @@
+<div class="parent">
+    <% if (results && results.length > 0) { %>
+        <h2 class="child one">Your Protein.jpg</h2>
+        <% results.forEach(result => { %>
+            <div class="child two"><span class="name-info">Protein Name: <%= result.Protein_Name %></span></div>
+            <div class="child three"><span class="name-info">Description: <%= result.Description %></span></div>
+            <div class="child four"><span class="name-info">Molecular Weight: <%= result.Molecular_Weight %></span></div>
+            <div class="child five"><span class="name-info">Function: <%= result.Purpose %></span></div>
+            <div class="child six"><span class="name-info">Source Organism: <%= result.Source_Organism %></span></div>
+        <% }); %>
+    <% } %>
+  </div>
